@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.95;
+}
+
+main {
+    padding: 30px;
+}
+
+.card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-right: 4px solid #667eea;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateX(-5px);
+}
+
+.card h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+#git-commands {
+    list-style: none;
+}
+
+#git-commands li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-family: monospace;
+    font-size: 1em;
+    color: #555;
+}
+
+#git-commands li:last-child {
+    border-bottom: none;
+}
+
+#git-commands code {
+    background: #2d2d2d;
+    color: #f8f8f2;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.status-display {
+    text-align: center;
+    padding: 20px;
+}
+
+#status-message {
+    font-size: 1.2em;
+    color: #667eea;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#update-status {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+#update-status:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+footer {
+    background: #f1f3f5;
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+    }
+    
+    header h1 {
+        font-size: 1.5em;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    .card {
+        padding: 15px;
+    }
+    
+    #git-commands code {
+        font-size: 0.8em;
+        margin-bottom: 5px;
+    }
+}

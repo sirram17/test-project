@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه نمونه - تمرین گیت</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 تمرین گیت (Git)</h1>
+            <p>یادگیری کنترل نسخه با Git و GitHub</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>دستورات مهم گیت</h2>
+                <ul id="git-commands">
+                    <li><code>git init</code> - شروع یک مخزن جدید</li>
+                    <li><code>git add .</code> - اضافه کردن همه فایل‌ها</li>
+                    <li><code>git commit -m "message"</code> - ثبت تغییرات</li>
+                    <li><code>git status</code> - بررسی وضعیت فایل‌ها</li>
+                    <li><code>git log</code> - مشاهده تاریخچه کامیت‌ها</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>✨ وضعیت فعلی پروژه</h2>
+                <div class="status-display">
+                    <p id="status-message">در حال بارگذاری...</p>
+                    <button id="update-status">بروزرسانی</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>نسخه 1.0.0 - برای تمرین Git ساخته شده است</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
